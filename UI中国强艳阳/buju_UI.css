@@ -1,0 +1,863 @@
+/*为body设置属性*/
+body {
+	margin: 0;
+	padding: 0;
+}
+* {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+/*整个页面的底背景*/
+.back {
+	background-color: #EFF3F5;
+}
+
+
+/*TOP栏的属性*/
+
+.Home_page:hover,.Class:hover,.Recruit:hover {
+	/*border: solid 1px #BBC5D1; */
+	border-top: solid 4px #3498DB;
+	box-shadow: 0.5px 0px 2px rgba(0,0,0,0.2);
+	/*height: 160px;*/
+}
+.top_right_r:hover {
+	background-color: #EFF3F5;
+	border-top: solid 4px #3498DB;
+}
+.top_right_c:hover {
+	border-top: solid 4px #3498DB;
+}
+.find,.study,.train,.more {
+	width: 90px;
+	height: 0px;
+	position: absolute;
+	top: 66px;
+	left: -1px;
+	overflow: hidden;
+	background-color: #fff;
+	z-index: 100;
+}
+.find li,.study li,.train li,.more li {
+	width: 75px;
+	height: 40px;
+	line-height: 40px;
+	text-align: left;
+	padding-left: 15px;
+	float: left;
+}
+.top {
+	width: 100%;
+	height: 70px;
+	background-color: #fff;
+	/*background-attachment: fixed;*/
+}	
+/*整个top的盒子属性*/
+.top_main {
+	width: 1180px;
+	height: 70px;
+	margin: auto;
+}	
+/*有内容的盒子属性*/
+.top_left {
+	width: 650px;
+	height: 70px;
+	display: inline-block;
+}	
+/*左边内容的盒子属性*/
+.top_left div {
+	width: 80px;
+	height: 65px;
+	text-align: center;
+	line-height: 70px;
+	border: solid 1px #fff;
+	border-top: solid 4px #fff;
+	/*padding: 16px 0 20px;*/
+	/*margin: 4px 1px 1px;*/
+	/*border-top: 4px solid transparent;*/
+	font-size: 14px;
+	float: left;
+	/*display: inline-block;*/
+	position: relative;
+	transition: border-top 0.5s;
+}	
+/*左边文字的属性*/
+.top_left>img {
+	float: left;
+	width: 50px;
+	height: 50px;
+	margin-top: 9px;
+	margin-right: 20px;
+}	
+/*左边图标的属性*/
+.top_right {
+	width: 520px;
+	height: 70px;
+	display: inline-block;
+	float: right;
+}	
+/*右边内容的属性*/
+.top_right div {
+	float: right;
+	display: inline-block;
+}	
+/*右边文字的属性*/
+.top_right_l {
+	width: 50px;
+	height: 70px;
+}	
+/*右边靠左盒子的属性*/
+.top_right_l>img {
+	width: 24px;
+	height: 24px;
+	margin: 23px 13px;
+}	
+/*右边靠左图标等的属性*/
+.top_right_c {
+	width: 60px;
+	height: 66px;
+	border-top: 4px solid transparent;
+}	
+/*右边中间位置盒子属性*/
+.top_right_c>img {
+	width: 27px;
+	height: 28px;
+	margin: 20px 0px;
+	padding: 0 0 0 20px;
+	border-left: 1px solid #CED7DE;
+}	
+/*右边中间位置内容属性*/
+.top_right_r {
+	width: 60px;
+	height: 66px;
+	border-top: 4px;
+	text-align: center;
+	line-height: 66px;
+	font-size: 14px;
+	margin: 0 0 0 20px;
+	border-top: 4px solid transparent;
+}	
+/*右边靠右位置盒子字体等属性*/
+.top_right_r>img {
+	width: 15px;
+	height: 19px;
+	margin: 24px 0px;
+	vertical-align: bottom;
+}	
+/*右边中间位置图片属性*/
+
+
+/*主界面第一段*/
+
+.main_back_one {
+	width: 100%;
+	height: 1200px;
+	background-color: #EFF3F5;
+}	
+/*整个主界面第一段背景*/
+.banner {
+	width: 1310px;
+	height: 350px;
+	margin: 20px auto 0;
+	/*background-color: #bbb;*/
+}
+.banner:hover .banner_left,.banner:hover .banner_right,.banner:hover .b_c_l>ul {
+	opacity: 1;
+	cursor: pointer;
+}
+/*轮播图的盒子属性*/
+.banner_left , .banner_right {
+	width: 65px;
+	height: 350px;
+	display: inline-block;
+	/*background-color: red;*/
+	float: left;
+	/*font-size: 30px;*/
+	line-height: 350px;
+	text-align: center;
+	opacity: 0;
+}
+.banner_left>i , .banner_right>i {
+	font-size: 60px;
+	color: #E2E5EA;
+	font-weight: 600;
+	
+}
+/*轮播图左边的切换按钮属性*/
+.banner_center {
+	width: 1180px;
+	height: 350px;
+	display: inline-block;
+	float: left;
+	/*background-image: url(./img/中国UI/轮播.png);*/
+	position: relative;
+}
+.b_c_l_img {
+	width: 1180px;
+	height: 350px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.b_c_l_img ul li {
+	width: 1180px;
+	height: 350px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 88;
+	opacity: 0;
+	transition: all 1.5s;
+}
+.b_c_l_img ul li img {
+	width: 1180px;
+	height: 350px;
+	
+}
+/*轮播图片的属性*/
+.banner_center .b_c_l li {
+	display: inline-block;
+	/*float: left;*/
+	/*margin: 320px auto 10px;*/
+	width: 15px;
+	height: 15px;
+	/*margin-left: 15px;*/
+	margin: 10px auto;
+	background-color: rgba(255,255,255,0.3);
+	border-radius: 50px;
+	margin-left: 15px;
+	transition: all 1s;
+}
+.banner_center .b_c_l ul {
+	display: block;
+	width: 200px;
+	height: 35px;
+	border-radius: 50px;
+	background-color: rgba(0,0,0,0.3);
+	position: absolute;
+	bottom: 10px;
+	left: 480px;
+	z-index: 99;
+	opacity: 0;
+}
+.b_c_l>ul>li.active {
+	width: 30px;
+}
+/*伦轮播图中轮播按钮的属性*/
+.b_c_l {
+	margin-left: 530px;
+
+}
+/*使轮播上的轮播按钮居中*/
+/*.banner_right {
+	width: 65px;
+	height: 350px;
+	display: inline-block;
+	/*background-color: red;*/
+/*	float: left;
+}*/
+/*轮播右边的切换按钮属性*/
+.select {
+	width: 1180px;
+	height: 57px;
+	/*background-color: red;*/
+	margin: auto;
+	position: relative;
+}
+/*轮播下面切换菜单的盒子属性*/
+.select_left {
+	width: 400px;
+	height: 40px;
+	float: left;
+}
+.select_left li {
+	width: 56px;
+	height: 40px;
+	font-size: 14px;
+	line-height: 42px;
+	text-align: center;
+	padding: 0 20px;
+    border-radius: 20px;
+    margin-top: 15px;
+    margin-right: 25px;
+	display: inline-block;
+}
+.select_left li:hover {
+	cursor: pointer;
+	color: #3498db;
+}
+
+
+.select_right {
+	width: 400px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 14px;
+	text-align: center;
+	border-radius: 50px;
+	margin-top: 15px;
+	padding: 0 15px;
+	background-color: #FFF7E7;
+	display: inline-block;
+	float: right;
+	position: relative;
+}
+.select_right ul li {
+	position: absolute;
+	top: 0;
+	left: 15px;
+	opacity: 0;
+}
+.select_right_botton {
+	position: absolute;
+	top: 0;
+	right: 0px;
+}
+
+.select_right i {
+	font-size: 24px;
+	margin-left: 10px;
+}
+.select_right:hover {
+	cursor: pointer;
+}
+.select_right_botton {
+	width: 130px;
+	height: 40px;
+	/*position: absolute;
+	top: 0;
+	right: 0;*/
+}
+
+
+/*切换菜单右边图片的属性*/
+.main_one {
+	width: 1180px;
+	height: 700px;
+	margin: auto;
+	position: relative;
+	/*background-color: red;*/
+}
+.main_one_small {
+	width: 1180px;
+	height: 700px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+/*.main_one_small li .main_1:nth-child(4n) {
+	margin-right: 0;
+}*/
+.main_one_big>li {
+	opacity: 0;
+}
+/*切换菜单下面总的信息快的盒子属性*/
+.main_1 {
+	width: 280px;
+	height: 310px;
+	/*background-color: red;*/
+	margin: 20px 0px 5px 0;
+	position: relative;
+	z-index: 2;
+}
+.main_1_Img {
+	width: 280px;
+	height: 210px;
+	overflow: hidden;
+}
+.main_one_big>li {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.main_one_small li {
+	position: relative;
+	transition: all 0.5s;
+}
+.main_1_back {
+	width: 310px;
+	height: 355px;
+	position: absolute;
+	top: 5px;
+	left: -15px;
+	z-index: 1;
+	background-color: #FFF;
+	opacity: 0;
+	transition: all 0.5s;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+/*.main_1_back:hover {
+	opacity: 1;
+}*/
+/*第一个信息快的盒子属性*/
+.main_1 .main_1_Img>img {
+	width: 280px;
+	height: 210px;
+	transition: all 0.5s;
+}
+/*第一个信息快中图片属性*/
+.main_1 h4 {
+	margin: 3px;
+	padding: 0;
+}
+/*标题属性*/
+.main_1 p {
+	margin: 5px;
+	padding: 0;
+	font-size: 14px;
+}
+/*介绍的属性*/
+.main_1 div b {
+	margin-bottom: 2px;
+	margin-left: 15px;
+	float: left;
+	font-size: 14px;
+	font-weight: 100;
+	transition: all 0.5s;
+}
+/*id的属性*/
+.main_1_Img2 img {
+	margin-bottom: 2px;
+	margin-left: 2px;
+	float: left;
+	font-size: 14px;
+}
+/*头像的属性*/
+#main_m {
+	margin: 25px 0 5px 0;
+}
+.main_one_bt {
+	margin: 30px auto 0;
+	height: 40px;
+	width: 300px;
+	/*background-color: blue;*/
+}
+/*主界面第一部分最下面的切换按钮*/
+.main_one_bt li {
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	display: inline-block;
+	border: solid 1px #BDC3C7;
+	border-radius: 50px;
+	margin: 0 10px;
+	color: #BDC3C7;
+	font-size: 20px;
+	transition: all 0.5s;
+}
+.main_one_bt li:nth-child(1) {
+	color: #000;
+	border: solid 1px #000;
+	font-weight: bold;
+}
+.main_one_bt li:hover {
+	color: #000;
+	border: solid 1px #000;
+	font-weight: bold;
+}
+/*主界面第一部分最下面的切换按钮属性*/
+
+/*主界面第二段(白)*/
+
+.main_white {
+	width: 100%;
+	height: 670px;
+	background-color: white;
+}
+/*主界面第二段的背景属性*/
+.main_white_select {
+	width: 1180px;
+	height: 57px;
+	/*background-color: red;*/
+	margin: auto;
+}
+/*切换菜单盒子的属性*/
+.main_white_select_left {
+	width: 56px;
+	height: 40px;
+	font-size: 14px;
+	line-height: 42px;
+	text-align: center;
+	padding: 0 20px;
+	border: 1px solid #fff;
+    border-radius: 20px;
+    margin-top: 25px;
+    margin-right: 25px;
+    /*font-weight: bold;*/
+	display: inline-block;
+}
+.main_white_select_left:nth-child(1) {
+	border: 1px solid #3498db;
+	font-weight: bold;
+	color: #3498db;
+}
+.main_white_select_left:hover {
+	color: #3498db;
+}
+/*切换菜单左边部分的属性*/
+.main_white_select_left a {
+	text-decoration: none;
+	color: #000;
+}
+/*切换菜单左边文字属性*/
+.main_white_select_right {
+	width: 280px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 14px;
+	margin-top: 25px;
+	color: #A9B8C3;
+	float: right;
+}
+/*切换菜单右边属性*/
+.main_white_m {
+	width: 1180px;
+	height: 650px;
+	/*background-color: red;*/
+	margin: 12px auto;
+}
+/*主界面第二段中主要内容底背景盒子等属性*/
+.main_white_m_l {
+	width: 900px;
+	height: 550px;
+	/*background-color: #aaa;*/
+	display: inline-block;
+}
+/*主要内容中左边的盒子属性*/
+.main_white_m_r {
+	width: 280px;
+	height: 410px;
+	/*background-color: #bbb;*/
+	background-size: 280px 410px;
+	background-image: url(./img/中国UI/999.png);
+	display: inline-block;
+	float: right;
+}
+.main_white_m_r div {
+	width: 280px;
+	height: 74px;
+	padding-top: 50px;
+	/*line-height: 124px;*/
+	text-align: center;
+	color: #fff;
+	background-color: rgba(0,0,0,0.5);
+	opacity: 0;
+	transition: all 0.5s;
+}
+.main_white_m_r div:hover {
+	opacity: 1;
+}
+/*主要内容中右边盒子属性*/
+.main_white_l_one {
+	width: 840px;
+	height: 162px;
+	margin: 3px;
+	/*background-color: #ddd;*/
+	border: solid #fff 3px;
+	border-bottom: solid #E0E7EB 1px;
+	display: inline-block;
+	position: relative;
+}
+.blue_back {
+	width: 900px;
+	height: 162px;
+	position: absolute;
+	top: -3px;
+	right: -30px;
+	background-color: rgba(0,0,0,0);
+	z-index: 2;
+	opacity: 0;
+	border: solid 3px #3498DB;
+	transition: all 0.5s;
+}
+.main_white_l_one:hover {
+	cursor: pointer;
+}
+.main_white_l_one:hover .blue_back {
+	opacity: 1;
+}
+.main_white_l_one:hover .main_white_m_l_l>img {
+	transform: scale(1.1,1.1);
+}
+.main_white_l_one:hover h3 {
+	color: #3498DB;
+}
+/*主要内容中左边第一个信息块*/
+.main_white_m_l_l {
+	width: 160px;
+	height: 120px;
+	margin: 20px 20px 20px 0;
+	background-size: 160px 120px;
+	/*background-image: url(./img/中国UI/l10.jpg);*/
+	display: inline-block;
+	/*float: left;*/
+}
+.main_white_m_l_l img {
+	width: 160px;
+	height: 120px;
+	transition: all 0.5s;
+}
+/*主要内容中左边第一个信息块中靠左的盒子属性*/
+.main_white_m_l_r {
+	width: 660px;
+	height: 120px;
+	/*background-color: red;*/
+	display: inline-block;
+	float: right;
+	margin-top: 20px;
+	/*margin: auto;*/
+}
+/*主要内容中左边第一个信息块中靠右的盒子属性*/
+.main_white_m_l_r h5 {
+	background-color: #3498DB;
+	display: inline-block;
+	width: 68px;
+	height: 25px;
+	line-height: 25px;
+	text-align: center;
+	border-radius: 2px;
+	color: #fff;
+	margin: 0;
+}
+.main_white_m_l_r h3 {
+	display: inline-block;
+	margin: 0;
+	transition: all 0.5s;
+}
+.main_white_m_l_r p {
+	margin: 10px 0;
+}
+.main_white_m_l_r b{
+	font-size: 12px;
+	line-height: 24px;
+	margin: 0 25px;
+	display: inline-block;
+}
+.main_white_m_l_r img {
+	margin: 2px;
+	float: left;
+}
+.main_two_bt {
+	margin: auto;
+	height: 40px;
+	width: 300px;
+	/*background-color: blue;*/
+}
+/*主界面第二段最后的按钮属性*/
+.main_two_bt li {
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	display: inline-block;
+	/*background-color: #aaa;*/
+	border: solid 1px;
+	border-radius: 50px;
+	margin: 20px 10px;
+	color: #BDC3C7;
+	font-size: 20px;
+	transition: all 0.3s;
+}
+.main_two_bt li:nth-child(1) {
+	color: #000;
+	border: solid 1px #000;
+	font-weight: bold;
+}
+.main_two_bt li:hover {
+	color: #000;
+	border: solid 1px #000;
+	font-weight: bold;
+}
+
+/*主界面第三段(灰)*/
+
+.main_back_three {
+	width: 100%;
+	height: 980px;
+	background-color: #EFF3F5;
+	/*background-color: red;*/
+}
+/*第三段整个的背景*/
+.main_three_main {
+	margin: auto;
+	width: 1180px;
+	height: 800px;
+	/*background-color: #ccc;*/
+}
+/*第三段内容盒子属性*/
+.main_three_m_top {
+	width: 1180px;
+	height: 650px;
+	margin: 25px 0 0 0;
+	/*background-color: red;*/
+}
+/*第三段上半部分盒子属性*/
+.main_top_one {
+	width: 334px;
+	height: 624px;
+	background-color: #fff;
+	float: left;
+	border: 3px solid #3498DB;
+	position: relative;
+}
+/*第三段上半部分第一行的盒子属性*/
+.mian_top_two {
+	width: 280px;
+	height: 630px;
+	background-color: #fff;
+	float: left;
+}
+/*第三段上半部分第二行的盒子属性*/
+.main_top_one img {
+	width: 334px;
+	height: 134px;
+}
+.main_top_one ul {
+	margin: 10px 0 10px 30px;
+	display: flex;
+	justify-content: space-between;
+	/*align-items: center;*/
+	flex-direction: column;
+}
+.main_top_one ul li {
+	padding: 7px 0;
+}
+.main_top_one ul li a {
+	color: #7C7C7C;
+	font-size: 14px;
+	line-height: 14px;
+	text-align: center;
+}
+.main_top_one ul li a:hover {
+	color: #3498DB;
+}
+.main_top_one>div {
+	width: 334px;
+	height: 54px;
+	line-height: 54px;
+	background-color: #ECF0F1;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+.main_top_one>div>a {
+	margin: 25px;
+	color: #7C7C7C;
+}
+.main_top_one a {
+	text-decoration: none;
+}
+.mian_top_two img {
+	width: 280px;
+	height: 210px;
+}
+.main_t_t_1 {
+	width: 280px;
+	height: 210px;
+}
+/*上半部分第二行第一个框的属性*/
+.main_t_t_2 {
+	width: 280px;
+	height: 210px;
+}
+/*上半部分第二行第二个框的属性*/
+.main_t_t_2 p {
+	margin: 10px 15px 15px;
+}
+.main_t_t_2 a {
+	text-decoration: none;
+	color: black;
+}
+.main_t_t_2 img {
+	float: left;
+	margin: 15px;
+}
+#main_t_t_one {
+	margin: 15px 15px 0 15px;
+	display: inline-block;
+}
+#main_t_t_two {
+	margin: 25px 10px;
+	display: inline-block;
+}
+.main_three_m_bottom ul {
+	margin: 0;
+	padding: 0;
+}
+/*第三段下半部分属性*/
+.main_three_m_bottom ul li {
+	display: inline-block;
+	margin-right: 13px;
+}
+.main_three_m_bottom ul li a {
+	width: 150px;
+	height: 24px;
+	display: inline-block;
+	margin-bottom: 10px;
+	text-decoration: none;
+	color: #798692;
+}
+.back_more li:hover a {
+	color: #3498DB;
+}
+
+/*TAB栏*/
+
+.footer{
+	width: 100%;
+	height: 90px;
+	background-color: #fff;
+	padding: 40px 0;
+}
+.footer div {
+	width: 1180px;
+	height: 90px;
+	margin: auto;
+	background-color: red;
+}
+.footer img {
+	width: 1180px;
+	height: 90px;
+}
+
+.backtop {
+	width: 250px;
+	height: 40px;
+	/*background-color: rgba(153,174,188,0.3);*/
+	position: fixed;
+	right: -120px;
+	top: 70%;
+	transition: all 1s;
+	opacity: 0;
+}
+.backtop1 , .backtop2 , .backtop3 {
+	width: 48px;
+	height: 40px;
+	background-color: rgba(153,174,188,0.3);
+	margin-bottom: 5px;
+	cursor: pointer;
+	color: #fff;
+	text-align: center;
+	line-height: 40px;
+	font-size: 14px;
+}
+.backtop1 {
+	height: 30px;line-height: 30px;
+}
+.backtop1:hover , .backtop2:hover , .backtop3:hover {
+	color: #3498DB;
+}
+.triangle {
+	width: 0;
+	height: 0;
+	/*border: 24px solid;
+	border-color: transparent transparent lightgray transparent;
+	opacity: 0.5;*/
+	border-top: 24px solid rgba(0,0,0,0);
+	border-left: 24px solid rgba(0,0,0,0);
+	border-right: 24px solid rgba(0,0,0,0);
+	border-bottom: 24px solid rgba(153,174,188,0.3);
+}
